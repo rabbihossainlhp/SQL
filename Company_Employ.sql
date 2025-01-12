@@ -174,8 +174,16 @@ From Student1 as s1
 right join Course1 as c1
 On s1.Id = c1.CourseId;
 
+-- -------------------------------------------------------------------------------------------New Setup 
 
+create database if not exists District_Info;
+use District_Info;
 
+Create Table District_information(
+    id int auto_increment primary key,
+    name varchar(100),
+    Description text
+);
 
-
-
+Select * from District_information;
+truncate table District_information;
